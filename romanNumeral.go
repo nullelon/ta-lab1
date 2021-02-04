@@ -15,6 +15,10 @@ type (
 	RomanNumeral []romanSymbol
 )
 
+func NewRomanNumeral() RomanNumeral {
+	return make(RomanNumeral, 0, 15)
+}
+
 func (n RomanNumeral) String() string {
 	var str string
 	for _, symbol := range n {
