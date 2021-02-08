@@ -2,6 +2,7 @@ package lab1
 
 import (
 	"errors"
+	"fmt"
 	"testing"
 )
 
@@ -26,6 +27,7 @@ func TestDecimalToRomanNumeral(t *testing.T) {
 		if err := check(res, numeral); err != nil {
 			t.Fatalf("test failed. Expected %s, got %s", numeral, res)
 		}
+		fmt.Printf("%d %s\n", i, res)
 	}
 }
 
