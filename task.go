@@ -3,7 +3,7 @@ package lab1
 import "errors"
 
 func DecimalToRomanNumeral(num int) (RomanNumeral, error) {
-	if num < 1 && num > 3000 {
+	if num < 1 || num > 3000 {
 		return nil, errors.New("wrong argument")
 	}
 	result := NewRomanNumeral()
